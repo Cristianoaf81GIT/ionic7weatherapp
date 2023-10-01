@@ -1,0 +1,7 @@
+{
+  "name": "wheatherApp",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
