@@ -3,14 +3,23 @@ import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
   {
-    path: 'home',
-    loadChildren: () => import('./home/home.module').then( m => m.HomePageModule)
+    path: 'splash-screen',
+    loadChildren: () => import('./splash-screen/splash.module').then( spsm => spsm.SplashScreenPageModule)
   },
   {
     path: '',
-    redirectTo: 'home',
+    redirectTo: 'splash-screen',
     pathMatch: 'full'
   },
+  {
+    path: 'screen01',
+    loadChildren: () => import('./screen01/screen01.module').then(sc01m => sc01m.Screen01Module)
+  },
+  {
+    path: 'screen01',
+    redirectTo: 'screen01',
+    pathMatch: 'full'
+  }
 ];
 
 @NgModule({
