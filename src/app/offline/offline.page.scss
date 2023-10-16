@@ -1,0 +1,49 @@
+#container {
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+  height: 100%;
+  width: 100%;
+  padding: 1rem;
+  background-color: #EDEDED;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  border-radius: 1.25rem;
+}
+
+#offline-row {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50%;
+}
+
+ion-icon, path {
+  fill: #0288D1;
+  fill-opacity: 1;
+  width: 9.8125rem;
+  height: 9.875rem;
+}
+
+#offline-text-row {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 4rem;
+}
+
+#offline-text {
+  text-align: center;
+  text-transform: lowercase;
+  font-family: Ingrid Darling;
+  font-size: 4.5rem;
+  font-style: normal;
+  font-weight: 400;
+  color: #0288D1;
+}

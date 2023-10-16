@@ -1,0 +1,84 @@
+#container {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0;
+  background: linear-gradient(144deg, #0288D1 -39.43%, #E959A0 92.67%, #ED589F 92.68%);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+#units-row {
+  display: flex;
+  width: 100%;
+  height: 4.125rem;
+  flex-direction: row-reverse;
+  position: absolute;
+  top: 3.19rem;
+}
+
+#units-icon {
+  fill: white;
+  fill-opacity: 1;
+  width: 4.125rem;
+  height: 3.25rem;
+  margin-right: 3.19rem;
+}
+
+#weather-icon-icon {
+  width: 100%;
+  height: 13.0625rem;
+  background-color: white;
+}
+
+#weather-icon {
+  width: auto;
+  height: auto;
+}
+
+#weather-temp-row {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+  font-family: Inder;
+  flex-shrink: 0;
+  color: #FFF;
+  text-align: center;
+  font-size: 8rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+#city-name {
+  text-transform: capitalize;
+  color: #FFF;
+  text-align: center;
+  font-family: Ingrid Darling;
+  font-size: 4rem;
+  font-style: normal;
+  font-weight: 400;
+  margin-top: 3rem;
+}
+
+#weather-time {
+  color: #FFF;
+  text-align: center;
+  font-family: Inder;
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+#weather-time-row {
+  position: absolute;
+  bottom: 1rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}

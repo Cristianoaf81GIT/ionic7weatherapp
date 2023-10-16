@@ -1,3 +1,47 @@
-<h1>
-  screen01 works!
-</h1>
+<div id="container">
+  <div id="image-container">
+   </div>
+  <div id="form-container">
+      <ion-input
+        label="Cidade"
+        class="custom"
+        labelPlacement="{{ style === 'ios' ? 'fixed' : 'floating'}}"
+        fill="outline"
+        (ionInput)="onCityNameInput($event)"
+        placeholder="{{ style === 'ios' ? 'Qual a sua cidade?' : 'Digite o nome da cidade' }}">
+      </ion-input>
+      <ion-note class="error" slot="errorText">{{error}}</ion-note>
+    <div id="config-units">
+      <ion-grid>
+        <ion-row>
+         <ion-radio-group value="metric" (ionChange)="onUnitChange($event)">
+           <ion-col>
+              <ion-radio
+                id="metric-radio"
+                value="metric"
+              >
+                Celcius
+              </ion-radio>
+            </ion-col>
+            <ion-col>
+              <ion-radio
+                id="imperial-radio"
+                value="imperial"
+              >
+                Fahrenheit
+              </ion-radio>
+            </ion-col>
+         </ion-radio-group>
+        </ion-row>
+      </ion-grid>
+    </div>
+    <div id="button-container">
+      <ion-button
+        id="find-weather-button"
+        (click)="submitData()"
+      >
+        Buscar
+      </ion-button>
+    </div>
+  </div>
+</div>

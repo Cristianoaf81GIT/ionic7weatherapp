@@ -1,0 +1,20 @@
+<div id="container">
+  <div id="units-row">
+    <ion-icon
+      src="{{units === 'metric' ? '../../assets/celsius-symbol-icon.svg' : '../../assets/fahrenheit-symbol-icon.svg'}}"
+      id="units-icon"
+    ></ion-icon>
+  </div>
+  <div id="weather-icon-row">
+    <img src="{{icon}}" id="weather-icon"/>
+  </div>
+  <div id="weather-temp-row">
+    <div id="weather-temp">{{temp}}</div>
+  </div>
+  <div id="city-name-row">
+    <div id="city-name">{{city}}</div>
+  </div>
+  <div id="weather-time-row">
+    <div id="weather-time">{{dateNow}}</div>
+  </div>
+</div>

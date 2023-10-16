@@ -19,6 +19,24 @@ const routes: Routes = [
     path: 'screen01',
     redirectTo: 'screen01',
     pathMatch: 'full'
+  },
+  {
+    path: 'screen02',
+    loadChildren: () => import('./screen02/screen02.module').then(sc02m => sc02m.Screen02Module)
+  },
+  {
+    path: 'offline',
+    loadChildren: () => import('./offline/offline.module').then(ofm => ofm.OfflineModule)
+  },
+  {
+    path: 'screen02',
+    redirectTo: 'screen02',
+    pathMatch: 'full'
+  },
+  {
+    path: 'offline',
+    redirectTo: 'offline',
+    pathMatch: 'full'
   }
 ];
 

@@ -13,6 +13,10 @@ export class SplashScreenPage implements OnInit, OnDestroy {
   constructor(private readonly router: Router) {}
 
   ngOnInit(): void {
+    if (!navigator.onLine) {
+      this.router.navigate(["/offline"]);
+    }
+
     this.timer = setTimeout(() => {
       this.router.navigate(["/screen01"]);
     }, 5000);
